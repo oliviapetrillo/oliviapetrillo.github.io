@@ -21,8 +21,18 @@ p {
   top: 50%;
   left: 50%;
    transform: translate(-50%, -50%);
+   text-align: center;
 }
 
+.imagewithcaption {
+	font-family: 'Roboto';
+    font-size: 30px;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
 .whomst {
 	font-size: 22px;
 	font-family: 'Roboto';
