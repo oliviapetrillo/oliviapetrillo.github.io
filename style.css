@@ -1,0 +1,44 @@
+#name {
+	color: green;
+    font-family: 'Roboto';
+    font-size: 26px;
+}
+
+p {
+	font-size: 22px;
+	font-family: 'Roboto';
+}
+.navbar-nav>li {
+	float:right;
+	font-family: 'Roboto';
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+#idpic {
+	position: fixed;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.whomst {
+	font-size: 22px;
+	font-family: 'Roboto';
+}
+.education {
+	font-size: 22px;
+	font-family: 'Roboto';
+}
+.interests {
+	font-size: 22px;
+	font-family: 'Roboto';
+}
+
+
+
+
+
+
+
