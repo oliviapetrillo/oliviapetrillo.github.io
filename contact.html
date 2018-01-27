@@ -18,7 +18,7 @@
 		<script src="https://use.fontawesome.com/7821df73e9.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<link rel= "stylesheet" type= "text/css" href= "style.css" />
-		<title>Olivia Petrillo</title>
+		<title>Contact</title>
 	</head>
 
 	<body>
@@ -32,17 +32,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Olivia Petrillo</a>
+      <a class="navbar-brand" href="#">Olivia Petrillo </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="topFixedNavbar1">
       <ul class="nav navbar-nav navlist">
-        <li class="navlistitem"><a href="contact.html">Contact</a></li>
+        <li class="navlistitem active"><a href="contact.html">Contact</a></li>
         <li class="navlistitem"><a href="Resume.docx.pdf" target=_"blank"> Resume</a> </li>
         <li class="navlistitem"><a href="https://github.com/oliviapetrillo" target="_blank">GitHub</a></li>
         <li class="navlistitem"><a href="about.html"> About</a></li>
-        <li class="navlistitem active"><a href="#"> Home</a></li>
+        <li class="navlistitem"><a href="index.html"> Home</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -52,16 +52,54 @@
 
 		
 
-		<header> Content for new header tag goes here (can insert an image) </header>
+		<header> 
+			<h1>Contact Olivia </h1>
 
-		<aside class="asideLeft">
-			<h1> WIP </h1>
-		</aside>
+		</header>
 
 		<section class="sectionRight">
-			<h2> Under construction </h2>
-			<p> I'm not fully finished yet!</p>
+			<h2> Send Me a Message! </h2>
+			<form action="oliviapetrillo.github.io/formmail.php" id="form1" name="form1" method="post">
+				<label for="textfield">Name:</label>
+				<br>
+				<input type="text" required class="formStyle" name="name" id="name" form="form1">
+				<br>
+				<label for="email">Email:</label>
+				<br>
+				<input type="email" required class="formStyle" name="email" id="email" fomr="form1">
+				<br>
+				<label for="textarea">Message:</label>
+				<br>
+				<textarea name="message" cols="5" required class="formStyle" id="message" form="form1"></textarea>
+				<br>
+				<input type="submit" class="formStyle" name="submit" id="submit" value="Submit" form="form1">
+				<br>
+			</form>
+
 		</section>
+
+<aside class="asideLeft">
+			<h2> Feel free to reach out to me on social media! </h2>
+			<div id="my_centered_buttons">
+				<button class="socialmedia">
+					<a href="https://www.facebook.com/oliviapetrillo" target="_blank">
+	  				<i class="fa fa-facebook" aria-hidden="true"></i>
+	  				</a>
+	  			</button>
+	  			<br>
+	  			<button class="socialmedia">
+	  				<a href="https://twitter.com/livpetrillo" target="_blank">
+	  				<i class="fa fa-twitter" aria-hidden="true"></i>
+	  				</a>
+	  			</button>
+	  			<br>
+	  			<button class="socialmedia">
+	  				<a href="https://www.instagram.com/livpetrillo/" target="_blank">
+	  				<i class="fa fa-instagram" aria-hidden="true"></i>
+	  				</a>
+	  			</button>
+	  		</div>
+		</aside>
 
 		<footer> Copyright 2018. Olivia Petrillo. </footer>
 	</body>
