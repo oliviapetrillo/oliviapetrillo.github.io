@@ -191,6 +191,12 @@ h1 {
  header {
  	margin-top: 30px;
  }
+ .socialmedia {
+  margin-bottom: 100px;
+}
+.aboutblog {
+	margin-bottom: 100px;
+}
 }
 
 .formStyle {
