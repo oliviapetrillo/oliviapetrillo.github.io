@@ -270,7 +270,6 @@ h1 {
 .boxedbio {
 	outline: #f2f2f2 double;
 	border-width: 200px 200px;
-	position: absolute;
 }
 
 .nuwit {
@@ -287,3 +286,28 @@ h1 {
 	display: flex; 
 	justify-content: center; 
 }
+
+.email:hover {
+	color:#4f99a5;
+}
+ .email {
+ 	color: #000000;
+ 	font-size: 2em;
+ 	text-align: center;
+ 	justify-content: center;
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
+ .glyphicon glyphicon-envelope {
+ 	text-align: center;
+ 	display: block;
+ 	justify-content: center;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
+ .glyphicon glyphicon-envelope:empty {
+ 	width: 100%;
+ }
