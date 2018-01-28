@@ -112,6 +112,7 @@ h1 {
 
 nav {
 	backrgound-color: #FFFFFF;
+	float: left;
 }
 
 .navlist {
@@ -119,10 +120,13 @@ nav {
 	margin: 0px;
 	overflow: hidden;
 	padding: 0px;
+	float: left;
 }
 
 .navlistitem {
-	/* float: left; */
+	float: none;
+	display: block;
+	position: absolute;
 }
 
 .navlistitem a {
@@ -157,6 +161,11 @@ nav {
 	margin-left: 5%;
 	margin-top: 15px;
 	margin-bottom: 100px;
+}
+
+.navlistitem {
+	float: none;
+	display: inline-block;
 }
 
 .sectionRight {
@@ -248,6 +257,8 @@ h1 {
 
 .aboutblog {
 	font-size: 1em;
+	position: relative;
+	margin-top: 200px;
 }
 
 .minibio {
@@ -259,6 +270,7 @@ h1 {
 .boxedbio {
 	outline: #f2f2f2 double;
 	border-width: 200px 200px;
+	position: absolute;
 }
 
 .nuwit {
