@@ -66,10 +66,29 @@ h1 {
  	height:60px;
  	width:100%;
  	padding-top: 38px;
- 	background-image: -webkit-linear-gradient(270deg,rgba(32, 60, 197,0.00) 0%,rgba(32, 60, 197,1.00) 100%);
- 	background-image: -moz-linear-gradient(270deg,rgba(32, 60, 197,0.00) 0%,rgba(32, 60, 197,1.00) 100%);
- 	background-image: -o-linear-gradient(270deg,rgba(32, 60, 197,0.00) 0%,rgba(32, 60, 197,1.00) 100%);
- 	background-image: linear-gradient(180deg,rgba(32, 60, 197,0.00) 0%,rgba(32, 60, 197,1.00) 100%);
+ 	background-image: -webkit-linear-gradient(270deg,rgba(130,202,255,0.00) 0%,rgba(130,202,255,1.00) 100%);
+ 	background-image: -moz-linear-gradient(270deg,rgba(130,202,255,0.00) 0%,rgba(130,202,255,1.00) 100%);
+ 	background-image: -o-linear-gradient(270deg,rgba(130,202,255,0.00) 0%,rgba(130,202,255,1.00) 100%);
+ 	background-image: linear-gradient(180deg,rgba(130,202,255,0.00) 0%,rgba(130,202,255,1.00) 100%);
+}
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 10px;
+    line-height: 24px;
+    position: fixed;
+    color: #82CAFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
 }
 
  header {
@@ -120,7 +139,7 @@ h1 {
 }
 
 nav {
-	backrgound-color: #FFFFFF;
+	background-color: #FFFFFF;
 	float: left;
 }
 
@@ -160,8 +179,9 @@ nav {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: 400;
-	color: #203cc5;
-
+	color: #82CAFF;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container-fluid {
