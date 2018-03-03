@@ -192,6 +192,17 @@ nav {
     position: absolute;
     width: 100%;
 }
+@media screen and (orientation: portrait) {
+  .backgroundimage { 
+  	max-width: 90%; 
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .backgroundimage { 
+  	max-height: 90%; 
+  }
+}
 @media (max-width: 650px) {
 	.asideLeft {
 	width: 90%;
@@ -202,15 +213,7 @@ nav {
 	margin-top: 50px;
 	margin-bottom: 150px;
 }
- .backgroundimage{
-	position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  image-orientation: from-image;
-  max-height: 25%;
-  max-width: 25%;
-}
+
 
 .sectionRight {
 	width: 90%;
