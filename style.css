@@ -208,8 +208,8 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   image-orientation: from-image;
-  max-height: 50%;
-  max-width: 50%;
+  max-height: 25%;
+  max-width: 25%;
 }
 
 .sectionRight {
