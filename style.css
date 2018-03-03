@@ -26,7 +26,7 @@ p {
 }
 
 body {
-	/* background-image: url(../oliviapetrillo.github.io/worldsend.jpg); */
+	
 	background-color: #ffffff;
 	background-size: cover;
 	background-attachment: fixed;
@@ -74,16 +74,24 @@ h1 {
 
  header {
  	text-align: center;
- 	margin-top: 70px;
+ 	margin-top: 40px;
  }
+ .backgroundimage{
+	width:270px;
+	height:150px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-75px 0 0 -135px;
+}
 
 .asideLeft {
-	width: 20%;
+	width: 15%;
 	float: left;
 	clear: left;
 	margin-right: 1%;
 	margin-left: 5%;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 50px;
 }
 .navbar-collapse.in,
@@ -94,7 +102,7 @@ h1 {
 	width: 55%;
 	float: right;
 	margin-right: 5%;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-left: 1%;
 	margin-bottom: 50px;
 	padding-left: 2.5%;
@@ -185,7 +193,6 @@ nav {
 	margin-bottom: 40px;
 }
 body {
-	/* background-image: url(../oliviapetrillo.github.io/worldsend.jpg); */
 	background-color: #ffffff;
 	background-size: cover;
 	background-attachment: fixed;
