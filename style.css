@@ -101,6 +101,8 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   image-orientation: from-image;
+  height: 500px;
+  width: 500px;
 }
 
 .asideLeft {
@@ -201,6 +203,15 @@ nav {
 	margin-left: 5%;
 	margin-top: 50px;
 	margin-bottom: 150px;
+}
+ .backgroundimage{
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  image-orientation: from-image;
+  height: 250px;
+  width: 250px;
 }
 
 .sectionRight {
