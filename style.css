@@ -64,6 +64,10 @@ footer {
   font-weight: bold;
 }
 
+.year {
+  float: right;
+}
+
 .aboutme {
 	font-size: 1.35em;
 }
@@ -71,6 +75,20 @@ footer {
 .coursework {
   list-style-image: url(icon/favicon.ico);
   font-size: 1.15em;
+}
+
+.coursework a {
+  color: #778899;
+  text-decoration: none;
+}
+
+.coursework a:hover {
+  color: #82CAFF;
+  text-decoration: none;
+}
+
+.col1, .col2, .col3 {
+  text-align: center;
 }
 
 .sectionRight {
@@ -230,6 +248,12 @@ font-family: 'Playfair Display';
 /* Fixing formatting for small screens ----*/
 
 @media (min-width: 750px) {
+
+  .tri-col {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+  }
 
   main {
     display: grid;
