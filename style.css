@@ -15,17 +15,7 @@ body {
 	font-weight: 400;
 	height: 100%;
 	margin: 0 auto;
-	/*padding-top: 70px;
-	padding-left: 24px;*/
   max-width: 1600px;
-}
-
-h2 {
-	font-size: 1.5em;
-	font-style: normal;
-	font-weight: 400;
-	text-align: center;
-  margin-bottom: 1em
 }
 
 header {
@@ -51,60 +41,60 @@ footer {
 }
 /* ----------------------------------------------------------- 
 
-/* About me bio box ----*/
-.imagewithcaption {
-	font-family: 'Roboto';
-	font-size: 1em;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-#idpic {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
+/* About me  ----*/
 
 .img-circle { /* circle photo */
 	border-radius: 50%;
 	max-width:100%;
 	max-height:100%;
+  border: 2px solid #bababa;
+}
+
+.edu {
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Playfair Display';
+  line-height: 1em;
+}
+
+.title {
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .aboutme {
-	font-size: 1.25em;
+	font-size: 1.35em;
 }
 
-.aboutblog {
-	font-size: 1em;
-	position: relative;
+.coursework {
+  list-style-image: url(icon/favicon.ico);
+  font-size: 1.15em;
 }
 
-.minibio {
-	font-size: 1em;
-	font-weight: bold;
-
+.sectionRight {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  /*background-color: #f2f2f2; */
+  background-image: -webkit-linear-gradient(270deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
+  background-image: -moz-linear-gradient(270deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
+  background-image: -o-linear-gradient(270deg,rgba(242, 242, 242,0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
+  background-image: linear-gradient(180deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
 }
+/* ----------------------------------------------------------- */
 
-.boxedbio {
-	outline: #f2f2f2 double;
-	border-width: 200px 200px;
-}
-
-.nuwit {
-	text-decoration: none;
-	color: black;
-}
-
-.nuwit:hover {
-	color: #699bea;
-	text-decoration: none;
-}
 
 /* ----------------------------------------------------------- */
 
@@ -193,31 +183,14 @@ nav {
   text-align: right;
 }
 
-
 /* ----------------------------------------------------------- */
 
-/* Home page background pic ----*/
-
-.backgroundimage{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	image-orientation: from-image;
-	width: 500px;
-	height: 500px;
-}
-/* ----------------------------------------------------------- */
-
-/* Home page slide show ----*/
+/* Home page pictures ----*/
 
 
 .main {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .figure-img {
@@ -237,11 +210,11 @@ nav {
 }
 
 .info1 p {
-  font-size: 2.5em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1em;
-  font-family: lato;
+  font-size: 3em;
+font-style: normal;
+font-weight: 400;
+line-height: 1em;
+font-family: 'Playfair Display';
   text-align: center;
 }
 
@@ -249,50 +222,15 @@ nav {
   margin-top: 80px;
   text-align: center;
   width: 100%;
+  text-align: center;
 }
 
-
-
-/* ----------------------------------------------------------- */
-
-/* Left and right sections ----*/
-
-.asideLeft {
-	width: 15%;
-	float: left;
-	clear: left;
-	margin-right: 1%;
-	margin-left: 5%;
-	margin-top: 20px;
-	margin-bottom: 50px;
-}
-
-.sectionRight {
-	width: 55%;
-	float: right;
-	margin-right: 5%;
-	margin-top: 20px;
-	margin-left: 1%;
-	margin-bottom: 50px;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
-	padding-top: 2.5%;
-	padding-bottom: 2.5%;
-	border-top-right-radius: 25px;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	/*background-color: #f2f2f2; */
-	background-image: -webkit-linear-gradient(270deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
-	background-image: -moz-linear-gradient(270deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
-	background-image: -o-linear-gradient(270deg,rgba(242, 242, 242,0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
-}
 /* ----------------------------------------------------------- */
 
 /* Fixing formatting for small screens ----*/
 
 @media (min-width: 750px) {
+
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -347,46 +285,15 @@ nav {
     grid-row: span 2;
   }
 
-  .asideLeft {
-		width: 90%;
-		float: none;
-		clear:both;
-		margin-right: 5%;
-		margin-left: 5%;
-		margin-top: 50px;
-		margin-bottom: 150px;
-	}
 	.sectionRight {
 		width: 90%;
 		float: none;
 		margin-right: 5%;
 		margin-top: 30px;
 		margin-left: 5%;
-		margin-bottom: 40px;
+		margin-bottom: 100px;
 	}
-	/*body {
-		background-color: #ffffff;
-		background-size: cover;
-		background-attachment: fixed;
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 400;
-		height: 100%;
-		margin: 0;
-		padding-top: 58px;
-		padding-left: 24px;
-	}
-	h1 {
-		font-size: 2em;
-		font-style: normal;
-		font-weight: 400;
-		text-align: center;
-		line-height: 1em;
-		height: 1em;
-	}
-	header {
-		margin-top: 30px;
-	}*/
+	
 	.aboutblog {
 		margin-bottom: 100px;
 	}
