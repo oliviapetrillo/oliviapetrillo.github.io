@@ -147,7 +147,6 @@ footer {
 navbar-collapse.in,
 .navbar-collapse.collapsing {
 	clear: right;
-  opacity: 1.0;
 }
 
 nav {
@@ -175,7 +174,7 @@ nav {
 	display: block;
 	padding-top: 10px;
 	padding-left: 16px;
-	padding-right: 16px
+	padding-right: 16px;
 	padding-bottom: 16px;
 }
 
@@ -232,10 +231,10 @@ nav {
 
 /* Home page pictures ----*/
 
-
-.main {
+main {
   margin-top: 50px;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .figure-img {
