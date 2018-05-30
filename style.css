@@ -116,7 +116,8 @@ footer {
 /* Projects  ----*/
 
 .info3, .info4, .info3 p, .info4 p {
-  padding: 20px;
+  padding: 5px;
+  padding-top: 10px;
   color: #000;
   text-align: left;
   top: 50%;
@@ -124,7 +125,7 @@ footer {
   font-size: 1.25em;
   font-style: normal;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.25em;
 }
 
 .figure {
@@ -381,3 +382,62 @@ font-family: 'Playfair Display';
 	}
 }
 /* ----------------------------------------------------------- */
+
+/* Fixing formatting for large screens ----*/
+
+@media (min-width: 1600px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .info1 {
+    grid-column: span 2;
+  }
+
+  .info2 {
+    grid-column: span 2;
+    grid-row : span 2;
+  }
+
+  .figure1 {
+    grid-column: span 2;
+  }
+
+  .figure4 {
+    grid-column: span 1;
+    grid-row: span .5;
+  }
+
+  .figure5 {
+    grid-column: span 1;
+    grid-row: span .5;
+  }
+
+  .figure6 {
+    grid-column: span 3;
+    grid-row : span 2;
+  }
+
+  .figure7 {
+    grid-column: span 3;
+  }
+
+  .figure11 {
+    grid-column: span 2;
+  }
+
+  .figure12 {
+    grid-row: span 3;
+  }
+
+  .figure13 {
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+
+  .figure14 {
+    grid-row: span 2;
+  }
+}
