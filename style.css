@@ -387,57 +387,66 @@ font-family: 'Playfair Display';
 
 @media (min-width: 1600px) {
 
+  .info1 p {
+    font-size: 3.5em;
+  }
+
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   .info1 {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 
   .info2 {
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row : span 2;
   }
 
   .figure1 {
+    grid-column: span 3;
+  }
+
+  .figure2, .figure3 {
     grid-column: span 2;
   }
 
-  .figure4 {
-    grid-column: span 1;
-    grid-row: span .5;
-  }
-
-  .figure5 {
-    grid-column: span 1;
+  .figure4, .figure5 {
+    grid-column: span 3;
     grid-row: span .5;
   }
 
   .figure6 {
-    grid-column: span 3;
+    grid-column: span 4;
     grid-row : span 2;
   }
 
   .figure7 {
-    grid-column: span 3;
+    grid-column: span 4;
+  }
+
+  .figure8, .figure9, .figure10 {
+    grid-column: span 2;
   }
 
   .figure11 {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 
   .figure12 {
     grid-row: span 3;
+    grid-column: span 2;
   }
 
   .figure13 {
     grid-row: span 3;
-    grid-column: span 3;
+    grid-column: span 5;
   }
 
   .figure14 {
     grid-row: span 2;
+    grid-column: span 2;
   }
 }
