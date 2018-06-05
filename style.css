@@ -389,6 +389,26 @@ font-family: 'Playfair Display';
     font-size: 3.5em;
   }
 
+  .info2 p {
+    font-size: 2em;
+  }
+
+  .edu {
+    font-size: 4em;
+  }
+
+  .title {
+    font-size: 1.6em;
+  }
+
+  .aboutme {
+    font-size: 1.7em;
+  }
+
+  .coursework {
+    font-size: 1.5em;
+  }
+
   main {
     width: 100%;
     display: grid;
