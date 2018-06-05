@@ -393,6 +393,10 @@ font-family: 'Playfair Display';
     font-size: 2em;
   }
 
+  .info3 p, .info4 p {
+    font-size: 1.6em;
+  }
+
   .edu {
     font-size: 4em;
   }
