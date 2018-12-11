@@ -287,7 +287,7 @@ nav {
 }
 
 .skew::before {
-	content: url(img\lilypad.jpg);
+	content: url(img/ilypad.jpg);
 	-webkit-transform: skew(0deg, 10deg);
 	transform: skew(0deg, 10deg);
 	z-index: -1;
