@@ -287,7 +287,7 @@ nav {
 }
 
 .skew::before {
-	content: url(oliviapetrillo.github.io/img/lilypad.jpg);
+	content: url(img/lilypad.jpg);
 	-webkit-transform: skew(0deg, 10deg);
 	transform: skew(0deg, 10deg);
 	z-index: -1;
@@ -298,7 +298,6 @@ nav {
 }
 
 .smallerSectionRight {
-	position: fixed;
 	width: 70%;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -344,6 +343,7 @@ nav {
 	.smallerSectionRight {
 		margin-left: 5%;
 		width: 90%;
+		margin-bottom: 100px;
 	}
 
 	/* about -------------- */
@@ -424,12 +424,13 @@ nav {
 	.aboutblog {
 		margin-bottom: 100px;
 	}
-}
-
-@media (max-width: 800px) {
 
 	.aboutmetitle {
 		padding-left: 15%;
+	}
+
+	.sectionRight {
+		 margin-bottom: 100px;
 	}
 }
 
