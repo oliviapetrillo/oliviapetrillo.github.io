@@ -23,7 +23,7 @@ header {
 	margin-top: 80px;
 }
 
-footer { 
+footer {
 	color: white;
 	font-size: small;
 	text-align: center;
@@ -39,7 +39,7 @@ footer {
 	background-image: -o-linear-gradient(270deg,rgba(130,202,255,0.00) 0%,rgba(130,202,255,1.00) 100%);
 	background-image: linear-gradient(180deg,rgba(130,202,255,0.00) 0%,rgba(130,202,255,1.00) 100%);
 }
-/* ----------------------------------------------------------- 
+/* -----------------------------------------------------------
 
 /* About me  ----*/
 
@@ -59,12 +59,29 @@ footer {
   line-height: 1em;
 }
 
+.tagline {
+	font-size: 3.3em;
+	font-style: italic;
+	text-align: center;
+	font-family: 'Playfair Display';
+	line-height: 1em;
+}
+
+.bio {
+	font-family: 'Roboto';
+	font-size: 2em;
+	font-style: normal;
+	padding-left: 15%;
+	padding-right: 15%;
+	text-align: center;
+}
+
 .title {
   font-size: 1.25em;
   font-weight: bold;
 }
 
-.year {
+.year, .school-year {
   float: right;
 }
 
@@ -77,7 +94,7 @@ footer {
   font-size: 1.15em;
 }
 
-.coursework a , #link a{
+.coursework a , #link a {
   color: #778899;
   text-decoration: none;
 }
@@ -87,8 +104,15 @@ footer {
   text-decoration: none;
 }
 
+.tri-col {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	grid-column-gap: 3%;
+}
+
 .col1, .col2, .col3 {
   text-align: center;
+	float:left;
 }
 
 .sectionRight {
@@ -105,7 +129,6 @@ footer {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  /*background-color: #f2f2f2; */
   background-image: -webkit-linear-gradient(270deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
   background-image: -moz-linear-gradient(270deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
   background-image: -o-linear-gradient(270deg,rgba(242, 242, 242,0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
@@ -128,6 +151,16 @@ footer {
   line-height: 1.25em;
 }
 
+.project-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+
+.info3 {
+	grid-column: span 2;
+}
+
 .figure {
   display: block;
   width: 70%;
@@ -140,6 +173,16 @@ footer {
   text-align: center;
   display: block;
   margin:auto;
+}
+
+.fig2 {
+	grid-column: span 1;
+	grid-row: span 1;
+}
+
+.info4 {
+	grid-column: span 1;
+	grid-row: span 2;
 }
 
 /* ----------------------------------------------------------- */
@@ -167,7 +210,7 @@ nav {
 	display: block;
 	text-align: right;
 	padding-right: 5px;
-	padding-left: 5px; 
+	padding-left: 5px;
 }
 
 .navlistitem a {
@@ -201,14 +244,14 @@ nav {
   border-bottom: 1px solid #f2f2f2;
 }
 
-.container-fluid .navbar-collapse .navlistitem a, 
+.container-fluid .navbar-collapse .navlistitem a,
 .container-fluid .navbar-collapse .dropdown .dropdown-menu .dropdown-item > a {
   color: #ffffff;
   background-color: #82CAFF;
 }
 
-.container-fluid .navbar-collapse .navlistitem > .active > a, 
-.container-fluid .navbar-collapse .navlistitem > a:hover, 
+.container-fluid .navbar-collapse .navlistitem > .active > a,
+.container-fluid .navbar-collapse .navlistitem > a:hover,
 .container-fluid .navbar-collapse .dropdown > a:hover,
 .container-fluid .navbar-collapse .dropdown > a:focus,
 .container-fluid .navbar-collapse .dropdown .dropdown-menu .dropdown-item > a:hover,
@@ -230,81 +273,141 @@ nav {
 
 /* ----------------------------------------------------------- */
 
-/* Home page pictures ----*/
+/* Home page ----*/
 
-main {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 100%;
+.skew {
+	margin-top: -200px;
+	padding: 200px 0;
+	-webkit-transform: skew(0deg, -10deg);
+	transform: skew(0deg, -10deg);
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
 }
 
-.figure-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.skew::before {
+	content: url(img/lilypad.jpg);
+	-webkit-transform: skew(0deg, 10deg);
+	transform: skew(0deg, 10deg);
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
 }
 
-.info1, .info2 {
-  padding: 40px;
-  background-color: #fff;
-  color: #000;
-  top: 50%;
-  left: 50%;
+.smallerSectionRight {
+	position: fixed;
+	width: 70%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 25%;
+  margin-right: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-image: -webkit-linear-gradient(270deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
+  background-image: -moz-linear-gradient(270deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
+  background-image: -o-linear-gradient(270deg,rgba(242, 242, 242,0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
+  background-image: linear-gradient(180deg,rgba(242, 242, 242, 0.00) 0%,rgba(242, 242, 242, 1.00) 100%);
 }
 
-.info1 p {
-  font-size: 3em;
-font-style: normal;
-font-weight: 400;
-line-height: 1em;
-font-family: 'Playfair Display';
-  text-align: center;
+.quote {
+	font-family: 'Playfair Display';
+	font-size: 2em;
+	font-style: italic;
 }
 
-.info1 {
-  margin-top: 80px;
-  width: 100%;
-  text-align: center;
+.author {
+	font-family: 'Roboto';
+	font-size: 1.25em;
 }
 
-.hello {
-  color: #82CAFF;
-  font-size: 2em;
-  font-weight: bold;
-  font-family: 'Playfair Display';
-  text-align: left;
-}
-
-.info2 p {
-  text-align: center;
+.book {
+	font-family: 'Roboto';
+	font-style: oblique;
+	font-size: 1em;
 }
 
 /* ----------------------------------------------------------- */
 
 /* Fixing formatting for small screens ----*/
 
-@media (min-width: 750px) {
+@media (max-width: 800px) {
+
+	.smallerSectionRight {
+		margin-left: 5%;
+		width: 90%;
+	}
+
+	/* about -------------- */
+
+	.title {
+	font-size: 1em;
+	}
+
+	.tagline {
+		font-size: 2em;
+	}
+
+	.bio {
+		font-size: 1.25em;
+	}
+
+	.coursework {
+		font-size: .9em;
+		align-items: center;
+	}
+
+	.school-year {
+		font-size: .9em;
+		float: left;
+	}
+
+	.year {
+		font-size: .9em;
+	}
+
+	.gpa {
+		font-size: .9em;
+	}
+
+	.tri-col {
+		display: block;
+		align-content: center;
+	}
+
+	.col {
+		display: block;
+		padding-left: 40%;
+		margin: auto;
+		float: none;
+	}
+
+	.col1, .col2, .col3 {
+		float: none;
+	}
+
+	.aboutmetitle {
+		padding-left: 30%;
+	}
+
 
 /* projects -------------- */
-
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-  }
 
   #cloud {
     grid-column: span 1;
   }
 
-  .info3 {
-    grid-column: span 1;
-  }
-
   .info4 {
-    grid-column: span 1;
-    grid-row: span 2;
+    grid-column: span 2;
+    grid-row: span 1;
   }
 
   .fig1 {
@@ -312,102 +415,42 @@ font-family: 'Playfair Display';
   }
 
   .fig2 {
-    grid-column: span 1;
-  }
-
-/* about ---------------- */
-  
-  .tri-col {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-column: span 2;
+		grid-row: span 1;
   }
 
 /* home ----------------- */
 
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .info1 {
-    grid-column: span 2;
-  }
-
-  .info2 {
-    grid-column: span 2;
-    grid-row : span 2;
-  }
-
-  .figure1 {
-    grid-column: span 2;
-  }
-
-  .figure4 {
-    grid-column: span 1;
-    grid-row: span .5;
-  }
-
-  .figure5 {
-    grid-column: span 1;
-    grid-row: span .5;
-  }
-
-  .figure6 {
-    grid-column: span 3;
-    grid-row : span 2;
-  }
-
-  .figure7 {
-    grid-column: span 3;
-  }
-
-  .figure11 {
-    grid-column: span 2;
-  }
-
-  .figure12 {
-    grid-row: span 3;
-  }
-
-  .figure13 {
-    grid-row: span 3;
-    grid-column: span 3;
-  }
-
-  .figure14 {
-    grid-row: span 2;
-  }
-
-	.sectionRight {
-		width: 90%;
-		float: none;
-		margin-right: 5%;
-		margin-top: 30px;
-		margin-left: 5%;
-		margin-bottom: 100px;
-	}
-	
 	.aboutblog {
 		margin-bottom: 100px;
+	}
+}
+
+@media (max-width: 800px) {
+
+	.aboutmetitle {
+		padding-left: 15%;
+	}
+}
+
+@media (max-width: 1100px) {
+
+	.tri-col {
+		grid-column-gap: 0%;
 	}
 }
 /* ----------------------------------------------------------- */
 
 /* Fixing formatting for large screens ----*/
 
+
 @media (min-width: 1600px) {
 
-  .info1 p {
-    font-size: 3.5em;
-  }
-
-  .info2 p {
-    font-size: 2em;
-  }
-
-  .info3 p, .info4 p {
-    font-size: 1.6em;
-  }
+.smallerSectionRight {
+	margin-top: 200px;
+	width: 90%;
+	margin-left: 5%;
+}
 
   .edu {
     font-size: 4em;
@@ -423,65 +466,5 @@ font-family: 'Playfair Display';
 
   .coursework {
     font-size: 1.5em;
-  }
-
-  main {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  .info1 {
-    grid-column: span 3;
-  }
-
-  .info2 {
-    grid-column: span 3;
-    grid-row : span 2;
-  }
-
-  .figure1 {
-    grid-column: span 3;
-  }
-
-  .figure2, .figure3 {
-    grid-column: span 2;
-  }
-
-  .figure4, .figure5 {
-    grid-column: span 3;
-    grid-row: span .5;
-  }
-
-  .figure6 {
-    grid-column: span 4;
-    grid-row : span 2;
-  }
-
-  .figure7 {
-    grid-column: span 4;
-  }
-
-  .figure8, .figure9, .figure10 {
-    grid-column: span 2;
-  }
-
-  .figure11 {
-    grid-column: span 3;
-  }
-
-  .figure12 {
-    grid-row: span 3;
-    grid-column: span 2;
-  }
-
-  .figure13 {
-    grid-row: span 3;
-    grid-column: span 5;
-  }
-
-  .figure14 {
-    grid-row: span 2;
-    grid-column: span 2;
   }
 }
