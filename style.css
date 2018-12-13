@@ -79,19 +79,27 @@ footer {
 .title {
   font-size: 1.25em;
   font-weight: bold;
+	font-family: 'Roboto';
 }
 
 .year, .school-year {
   float: right;
+	font-family: 'Roboto';
+}
+
+.school-year-lb {
+	display: none;
 }
 
 .aboutme {
 	font-size: 1.35em;
+	font-family: 'Roboto';
 }
 
 .coursework {
   list-style-image: url(icon/favicon.ico);
   font-size: 1.15em;
+	font-family: 'Roboto';
 }
 
 .coursework a , #link a {
@@ -368,7 +376,11 @@ nav {
 	.school-year {
 		font-size: .9em;
 		float: left;
-	}
+		}
+
+		.school-year-lb {
+			display: block;
+		}
 
 	.year {
 		font-size: .9em;
@@ -385,7 +397,7 @@ nav {
 
 	.col {
 		display: block;
-		padding-left: 40%;
+		padding-left: 25%;
 		margin: auto;
 		float: none;
 	}
@@ -395,7 +407,7 @@ nav {
 	}
 
 	.aboutmetitle {
-		padding-left: 30%;
+		padding-left: 25%;
 	}
 
 
@@ -425,10 +437,6 @@ nav {
 		margin-bottom: 100px;
 	}
 
-	.aboutmetitle {
-		padding-left: 15%;
-	}
-
 	.sectionRight {
 		 margin-bottom: 100px;
 	}
@@ -439,6 +447,7 @@ nav {
 	.tri-col {
 		grid-column-gap: 0%;
 	}
+
 }
 /* ----------------------------------------------------------- */
 
@@ -457,15 +466,37 @@ nav {
     font-size: 4em;
   }
 
-  .title {
+  .title, .school-year, .gpa {
     font-size: 1.6em;
   }
 
-  .aboutme {
-    font-size: 1.7em;
-  }
+	.aboutme, .coursework {
+		font-size: 1.8em;
+	}
 
-  .coursework {
-    font-size: 1.5em;
-  }
+	.info3, .info4 {
+		font-size: 2em;
+	}
+
+	.tagline {
+		font-size: 4.2em;
+	}
+
+	.bio {
+		font-size: 2.2em;
+	}
+
+	footer {
+		font-size: 1.2em;
+		padding-bottom: 1.5%;
+	}
+
+	.navlistitem a {
+		font-size: 1.3em;
+	}
+
+	.navbar-brand {
+		font-size: 1.5em;
+}
+
 }
